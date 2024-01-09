@@ -34,7 +34,6 @@ def check_port(host, port):
         client.close()
 
     except KeyboardInterrupt:
-        print("\nExiting...")
         exit()
 
     except socket.gaierror:
@@ -44,9 +43,9 @@ def check_port(host, port):
     except socket.error:
         pass
 
-target_host = input("Enter host IP address: ")
-min_port = int(input("Enter the minimum port number: "))
-max_port = int(input("Enter the maximum port number: "))
+target = input("Enter IP address of the host: ")
+min_port = int(input("Enter minimum port number: "))
+max_port = int(input("Enter maximum port number: "))
 
 for port in range(min_port, max_port+1):
-    check_port(target_host, port)
+    check_port(target, port)
