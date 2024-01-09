@@ -1,8 +1,10 @@
 # tcp-port-scanner
-A simple Python script for scanning ports on a given host.
+A simple Python script for scanning ports on a given host.  
+
 
 ## Features
 - Scans a range of ports on a specified host.
+- Ensures a TCP connection is first established to the host and port to identify the open ports.
 - Identifies common services associated with open ports.
 
 ## Common Ports Identified: 
