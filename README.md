@@ -22,4 +22,4 @@ A simple Python script for scanning ports on a given host.
     1433: MSSQL
     3306: MySQL
     3389: RDP
-    5900: VNC"
+    5900: VNC
